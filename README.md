@@ -31,33 +31,24 @@ The frontend of this project is built using **JavaScript**, while the backend is
 
 ## 🗄️ Database Configuration
 
-## 🗄️ Database Setup
-
 When using this project on your local system, create a database named:
 
-```sql
+### Create Database
+
 CREATE DATABASE clinic_app;
 USE clinic_app;
 
 ### 📋 Table Structures
 
 #### admins
-- `id`
-- `username`
-- `password`
-- SQL query
+
 CREATE TABLE admins (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
 #### patients
-- `id`
-- `name`
-- `email`
-- `password`
-- `created_at`
--SQL query
+
 CREATE TABLE patients (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -66,13 +57,7 @@ CREATE TABLE patients (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 #### doctors
-- `id`
-- `name`
-- `specialization`
-- `start_time`
-- `end_time`
-- `created_at`
-  SQL query
+
   CREATE TABLE doctors (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -83,15 +68,7 @@ CREATE TABLE patients (
 );
 
 #### appointments
-- `id`
-- `patient_id`
-- `doctor_id`
-- `appointment_date`
-- `appointment_time`
-- `status`
-- `created_at`
 
-SQL query:
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     patient_id INT NOT NULL,
