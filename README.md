@@ -35,6 +35,7 @@ When using this project on your local system, create a database named:
 
 ### Create Database
 
+```sql
 CREATE DATABASE clinic_app;
 USE clinic_app;
 
