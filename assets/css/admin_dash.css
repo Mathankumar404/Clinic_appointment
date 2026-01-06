@@ -1,0 +1,197 @@
+ * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* Page container */
+.admin-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.admin-container h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #1f2937;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header row */
+.admin-table th {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Cells */
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Zebra rows */
+.admin-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Status select */
+.admin-table select {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+}
+
+/* Update button */
+.admin-table button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.admin-table button:hover {
+  background-color: #1e40af;
+}
+
+/* Status text colors */
+.status-Pending {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.status-Approved {
+  color: #065f46;
+  font-weight: 600;
+}
+
+.status-Cancelled {
+  color: #991b1b;
+  font-weight: 600;
+}
+
+/* Logout link */
+.admin-logout {
+  display: inline-block;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.admin-logout:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .admin-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+
+
+ 
+ 
+ /* SEARCH FORM CSS */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  background: #f8f9fb;
+  border: 1px solid #e0e3e8;
+  border-radius: 8px;
+}
+
+/* INPUT & SELECT */
+.search-form input,
+.search-form select {
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #cfd6df;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  background: #fff;
+}
+
+/* INPUT WIDTH CONTROL */
+.search-form input {
+  width: 220px;
+}
+
+/* FOCUS STATE */
+.search-form input:focus,
+.search-form select:focus {
+  border-color: #1e3c72;
+  box-shadow: 0 0 0 2px rgba(30, 60, 114, 0.15);
+}
+
+/* BUTTON */
+.search-form button {
+  height: 38px;
+  padding: 0 18px;
+  background: #1e3c72;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.search-form button:hover {
+  background: #16305c;
+}
+
+/* RESPONSIVE (DON’T IGNORE THIS) */
+@media (max-width: 768px) {
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .search-form select,
+  .search-form button {
+    width: 100%;
+  }
+}

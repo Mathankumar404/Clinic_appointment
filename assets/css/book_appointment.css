@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* Page container */
+.appointment-container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.appointment-container h3 {
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+/* Form layout */
+.appointment-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.appointment-container label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Inputs & selects */
+.appointment-container select,
+.appointment-container input[type="date"] {
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.appointment-container select:focus,
+.appointment-container input[type="date"]:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Submit button */
+.appointment-container button {
+  padding: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.appointment-container button:hover {
+  background-color: #1e40af;
+}
+
+/* Message area */
+#msg {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #059669;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .appointment-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}

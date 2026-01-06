@@ -1,0 +1,56 @@
+/* Dashboard layout */
+.dashboard {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.welcome {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Card grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Anchor wrapper for card */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Icon */
+.card i {
+  font-size: 32px;
+  color: #2c7be5;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

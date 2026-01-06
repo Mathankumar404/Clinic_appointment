@@ -1,0 +1,141 @@
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ===== FORM ===== */
+form {
+  margin-bottom: 25px;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="time"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: 700;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* ===== ACTION LINKS ===== */
+.actions a {
+  margin: 0 6px;
+  color: #4a90e2;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DELETE LINK ===== */
+.delete {
+  color: #e53935;
+}
+
+.delete:hover {
+  text-decoration: underline;
+  color: #c62828;
+}
+
+/* ===== CANCEL LINK ===== */
+form a {
+  margin-left: 10px;
+  color: #666;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+.cancelbtn{
+  background-color: rgb(240, 58, 58);
+  display: block;
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.cancelbtn:hover{
+  background-color: rgb(200, 40, 40);
+  text-decoration: none;
+}
